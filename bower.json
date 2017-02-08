@@ -1,12 +1,12 @@
 {
-  "name": "cv",
+  "name": "personal-web-page",
   "version": "0.1.0",
-  "description": "Basic cv web page",
+  "description": "Personal web page",
   "authors": [
     "Ergokira"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/ergokira/cv",
+  "homepage": "https://github.com/ergokira/personal-web-page",
   "ignore": [
     "**/.*",
     "node_modules",
