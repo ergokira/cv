@@ -160,6 +160,11 @@ header{
 /* ............................................... - 6. Portfolio - ............................................... */
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+.portfolio .works{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .portfolio .info-block a{
   overflow: hidden;
   display: inline-block;
@@ -171,6 +176,14 @@ header{
     transition: 0.3s;
     transform: scale(1.1);
   } 
+}
+
+@media(min-width:768px ){
+
+  .portfolio .info-block a{
+    margin-right: 15px;
+    margin-left: 15px;
+  }
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
