@@ -12,5 +12,10 @@
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
 
+    $('#top-arrow').on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: 0 }, 'slow');
+    });
+
   }); // end of document ready
 })(jQuery); // end of jQuery name space
