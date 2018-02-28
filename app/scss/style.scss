@@ -14,7 +14,7 @@ p {
 }
 
 .parallax-container {
-  min-height: 380px;
+  min-height: 220px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
@@ -22,22 +22,6 @@ p {
   .parallax-container .section {
     width: 100%;
   }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
 
 footer.page-footer {
   margin: 0;
@@ -65,7 +49,7 @@ h3{
 }
 
 hr{
-  width: 70%;
+  width: 50%;
   height: 0;
   border: 0;
   opacity: 0.2;
@@ -88,29 +72,27 @@ header{
   }
 }
 
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
-/* ................................................ - 3.Banner - ................................................. */
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-#index-banner {
-  h1,
-  h5 {
-    text-shadow: 0 0 0 transparent, 0 0 40px rgba(0, 0, 0, .5);    
-  }
-}
-
-
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
 /* ............................................... - 4. Profile - ................................................ */
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-.profile{
-  h5{
+.profile {
+  padding: 1.5rem 0 4rem 0;
+  
+  h5 {
   padding: 0 0 20px 0;
   }
-  .info-block{
+
+  .info-block {
     padding: 0 5%;
   }
+
+  .details {
+    p {
+      margin: 0 auto;
+      max-width: 150px;
+    }
+  }
+
 }
 
 .photo-block {
@@ -136,20 +118,14 @@ header{
 
 .abilities ul 
 {
-  padding: 0 5%; 
+  margin: 0 auto;
+  max-width: 200px; 
+  padding: 0 5%;
 }
 
 .abilities li{
 
-  opacity: 0;
   padding: 3px;
-  &:hover{
-    @extend .grey, .lighten-2;
-    i{
-      padding-left: 3px;
-      transition: 0.4s;
-    }
-  }
 }
 .skill-score
 {
@@ -169,13 +145,14 @@ header{
 .portfolio .works{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .portfolio .info-block a{
   overflow: hidden;
   display: inline-block;
   margin-bottom: 30px;
   font-size: 0;
+  max-width: 225px;
   @extend .z-depth-1;
   &:hover{
     @extend .z-depth-3;
@@ -185,6 +162,11 @@ header{
 }
 
 @media(min-width:768px ){
+
+  .portfolio .works{
+    display: flex;    
+    flex-wrap: nowrap;    
+  }
 
   .portfolio .info-block a{
     margin-right: 15px;
@@ -223,6 +205,11 @@ footer{
   }
   i{
     padding-right: 10px;
+  }
+
+  ul {
+      margin: 0 auto;
+      max-width: 350px; 
   }
 }
 
