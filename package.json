@@ -12,7 +12,9 @@
     "url": "https://github.com/ergokira/personal-web-page.git"
   },
   "scripts": {},
-  "dependencies": {},
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.12.5",
     "gulp": "^3.9.1",

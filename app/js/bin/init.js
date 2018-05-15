@@ -1,10 +1,10 @@
 (function($){
   $(function(){
 
-  	var options = [
-    	{selector: 'footer', offset: 300, callback: function(el) { Materialize.showStaggeredList($(el)); } }
-  	];
-  	Materialize.scrollFire(options);
+  	// var options = [
+    // 	{selector: 'footer', offset: 300, callback: function(el) { Materialize.showStaggeredList($(el)); } }
+  	// ];
+  	// Materialize.scrollFire(options);
 
     $(".button-collapse").sideNav({closeOnClick: true})
 
